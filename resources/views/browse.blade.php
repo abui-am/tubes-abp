@@ -25,7 +25,7 @@
                     <a href="/browse" class="text-white font-bold text-lg">Pemesanan Tiket Konser</a>
                     <a href="/browse" class="text-white">Browse</a>
                 </div>
-                <div class="text-white">Abuii, 089614292529</div>
+                <div class="text-white">{{ session('name') }}, {{ session('nomor_hp') }}</div>
             </div>
         </nav>
         <!-- App Content -->
