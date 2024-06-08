@@ -27,15 +27,8 @@
 <body class="font-sans antialiased dark:bg-black dark:text-white/50 text ">
     <div class="bg-gray-950 w-screen min-h-screen relative backgroud-image">
         <!-- App Navigation -->
-        <nav class="sticky top-0 left-0 right-0 z-10 bg-gray-950 w-full ">
-            <div class="flex justify-between items-center p-6 ">
-                <div class="max-w-[572px] w-full flex justify-between items-center">
-                    <a href="/browse" class="text-white font-bold text-lg">Pemesanan Tiket Konser</a>
-                    <a href="/browse" class="text-white">Browse</a>
-                </div>
-                <div class="text-white">Abuii, 089614292529</div>
-            </div>
-        </nav>
+        @include('components.header')
+
         <!-- App Content -->
         <main class="p-6 max-w-7xl mx-auto text-white">
             <div class="z-1 absolute top-0 left-0 right-0 bottom-0" style="background: linear-gradient(259.99deg, rgba(0, 0, 0, 0) 9.41%, rgba(0, 0, 0, 0.85) 49.58%, #060608 70.83%);">
