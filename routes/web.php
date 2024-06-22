@@ -5,12 +5,9 @@ use App\Http\Controllers\ProfileController;
 use App\Models\Concert;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Models\Seat;
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/dashboard', function () {
     $concerts = Concert::all();
     return view(
         'dashboard',
@@ -30,6 +27,16 @@ Route::middleware('auth')->group(function () {
 Route::get('/concerts/{id}', function ($id) {
     return view('concert', [
         'concert' =>  Concert::find($id)
+    ]);
+});
+
+Route::get('/concerts/{id}/seats', function ($id) {
+    return view('beli-ticket', [
+        'user' => auth()->user(),
+        'concert' => Concert::find($id),
+        'occupied_seats' => Seat::where('concert_id', $id)->get(),
+        'vip_seats' =>  ['F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7'],
+        'regular_seats' => range(1, 42),
     ]);
 });
 

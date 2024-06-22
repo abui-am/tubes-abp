@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Laravel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -22,8 +23,8 @@
         <nav class="sticky top-0 left-0 right-0 z-10 bg-gray-950 w-full ">
             <div class="flex justify-between items-center p-6 ">
                 <div class="max-w-[572px] w-full flex justify-between items-center">
-                    <a href="/dashboard" class="text-white font-bold text-lg">Pemesanan Tiket Konser</a>
-                    <a href="/dashboard" class="text-white">Browse</a>
+                    <a href="/" class="text-white font-bold text-lg">Pemesanan Tiket Konser</a>
+                    <a href="/" class="text-white">Browse</a>
                 </div>
                 <div class="flex gap-2 items-center">
 

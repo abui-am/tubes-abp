@@ -47,7 +47,9 @@
                     </p>
 
                     <div class="flex gap-4">
-                        <button class="bg-[#2FA7EA] min-w-[112px] inline-block p-3 text-xs rounded-lg font-bold text-white ">Beli Tiket </button>
+
+                        <a href="/concerts/{{ $concert['id']}}/seats" class="bg-gray-800 min-w-[112px] inline-block p-3 text-xs rounded-lg text-white ">Beli Tiket</a>
+
                         <button class="bg-gray-800 min-w-[112px] inline-block p-3 text-xs rounded-lg text-white ">Informasi Lanjut</button>
                     </div>
                 </div>
