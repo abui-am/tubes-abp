@@ -4,6 +4,7 @@ use App\Http\Controllers\API\ConcertController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Concert;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
